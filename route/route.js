@@ -7,4 +7,5 @@ let jsonParser=bodyParser.json()
 router.put('/save',jsonParser,employee.saveEmploye)
 router.get('/:empId',employee.getEmployee)
 router.delete('/delete/:empId', employee.deleteEmployee)
+router.get('/hello',(req,res)=> res.send('Welcome to Google Cloud'))
 module.exports=router
